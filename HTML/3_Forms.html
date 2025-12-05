@@ -1,0 +1,99 @@
+<!-- Create a login form with username and password, a checkbox for 'Remember me', and a submit button. Then create a registration form with text inputs, radio buttons, checkboxes, select menus, and floating labels. Style focus and error states with CSS only. -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Forms</title>
+    <link rel='stylesheet' href='../CSS/style3.css'>
+</head>
+<body>
+    <div class="form-container">
+
+        <!-- LOGIN FORM -->
+        <form action="#"class="form login-form" novalidate>
+            <h2>Login</h2>
+
+            <div class="input-group">
+                <input type="text" id="login-username" placeholder=" " required>
+                <label for="login-username">Username</label>
+                <span class="error">Username is required</span>
+            </div>
+
+            <div class="input-group password-group">
+                <input type="password" id="login-password" placeholder=" " required>
+                <label for="login-password">Password</label>
+                <span class="error">Password is required</span>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <!-- SOCIAL LOGIN INLINE -->
+            <div class="social-login-inline">
+                <span>Or sign in using</span>
+                <div class="social-buttons">
+                    <button type="button" class="google">G</button>
+                    <button type="button" class="facebook">F</button>
+                    <button type="button" class="twitter">T</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- REGISTRATION FORM -->
+        <form class="form register-form" novalidate>
+            <h2>Register</h2>
+
+            <div class="input-group">
+                <input type="text" id="reg-username" placeholder=" " required>
+                <label for="reg-username">Username</label>
+                <span class="error">Username is required</span>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="reg-email" placeholder=" " required>
+                <label for="reg-email">Email</label>
+                <span class="error">Valid email is required</span>
+            </div>
+
+            <div class="input-group password-group">
+                <input type="password" id="reg-password" placeholder=" " required>
+                <label for="reg-password">Password</label>
+                <span class="error">Password is required</span>
+                <button type="button" class="show-pass">👁</button>
+            </div>
+
+            <div class="radio-group">
+                <span>Gender:</span>
+                <input type="radio" id="male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to terms</label>
+            </div>
+
+            <div class="input-group">
+                <select id="country" required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="india">India</option>
+                </select>
+                <label for="country">Country</label>
+                <span class="error">Please select a country</span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

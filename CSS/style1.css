@@ -1,0 +1,33 @@
+/* CSS for Typography */
+/* Rules of thumb:
+
+Use . for reusable styles on multiple elements.
+Use # for unique elements (like page header, footer).
+Use nothing when you want to target all tags of a type.
+
+Selectors: .class → any element with class,
+#id → element with unique id,
+element → all of that type;
+combine: element.class, element#id, .class1.class2, parent child, parent > child, sibling + sibling, sibling ~ siblings, group with , */
+
+
+/* we use root to create a new variable with a style so that we can call it whenever needed. */
+:root{
+--bg:#0f1724;
+--card:#111827;
+--muted:#9ca3af;
+--accent:#7dd3fc;
+}
+
+html,body{
+    height:100%;
+}
+body{
+    background-color: hsl(218, 25%, 63%);
+    color: white;
+    margin: 0px;
+    line-height: 1.5;
+    border-radius: 12px;
+    padding: 48px;
+    font-family: sans-serif;
+}

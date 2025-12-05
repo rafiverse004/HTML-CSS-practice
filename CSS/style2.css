@@ -1,0 +1,102 @@
+/* how button will look like..... */
+button {
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    outline: none; 
+}
+/* when clicked on a button gives a border */
+button:focus {
+    outline: 3px solid #555;
+    outline-offset: 2px;
+}
+/* this hide the mouse cursor from disabled button */
+button:disabled {
+    background: #d1d0d0;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+/* Button 1: Gradient + Shadow */
+.btn1 {
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    color: white;
+    border-radius: 8px;
+    /* box-shadow: horizontal vertical blur rgba(red, green, blue, opicity); */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.btn1:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+/* button moves when clicked on it */
+.btn1:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+/* Button 2: Outline + Hover Fill */
+.btn2 {
+    background: transparent;
+    color: #1c7ed6;
+    border: 2px solid #1c7ed6;
+    border-radius: 12px;
+}
+.btn2:hover {
+    background: #1c7ed6;
+    color: white;
+}
+.btn2:active {
+    transform: scale(0.95);
+}
+
+/* Button 3: Rounded + Shadow + Gradient */
+.btn3 {
+    background: linear-gradient(90deg, #845ef7, #5c7cfa);
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.btn3:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: translateY(-3px);
+}
+.btn3:active {
+    transform: translateY(2px);
+}
+
+/* Button 4: Flat + Shadow + Hover Lift */
+.btn4 {
+    background: #12b886;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.btn4:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+.btn4:active {
+    transform: translateY(1px);
+}
+
+/* Button 5: Ghost Button + Smooth Hover */
+.btn5 {
+    background: transparent;
+    color: #f783ac;
+    border: 2px dashed #f783ac;
+    border-radius: 10px;
+}
+.btn5:hover {
+    background: #f783ac;
+    color: white;
+    border-style: solid;
+}
+.btn5:active {
+    transform: scale(0.97);
+}

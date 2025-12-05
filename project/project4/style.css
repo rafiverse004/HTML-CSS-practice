@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.profile-card {
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 0;
+  z-index: 0;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid #fff;
+}
+
+.image .profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.text-data .study {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555
+}
+
+.mediabuttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mediabuttons .links {
+  text-decoration: none;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.mediabuttons .links.facebook {
+    background-color: #3b5998;
+}
+.mediabuttons .links.whatsapp {
+    background-color: #25D366;
+}
+.mediabuttons .links.twitter {
+    background-color: #1DA1F2;
+}
+.mediabuttons .links.github {
+    background-color: #000;
+}
+
+.mediabuttons .links:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.options {
+  display: flex;
+  gap: 25px;
+  font-size: 15px;
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.options .links {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.options .links:hover {
+  font-weight: bold;
+  transform: scale(1.2);
+}

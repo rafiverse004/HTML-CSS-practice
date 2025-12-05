@@ -1,0 +1,94 @@
+/* CSS for Extras */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 2rem; }
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Common Card Styles */
+.card {
+  position: relative;
+  background: #fff;
+  padding: 2rem;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Ribbon using ::before */
+.ribbon-card::before {
+  content: "SALE";
+  position: absolute;
+  top: 15px;
+  right: -40px;
+  background: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 60px;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Badge using ::after */
+.badge-card::after {
+  content: "NEW";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #3498db;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+/* Tooltip */
+.tooltip-icon {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  color: #3498db;
+  margin-left: 0.3rem;
+}
+.tooltip-icon .tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 20;
+}
+.tooltip-icon:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Optional arrow for tooltip */
+.tooltip-icon .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* bottom of tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
