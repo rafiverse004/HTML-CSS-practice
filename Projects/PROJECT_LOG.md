@@ -19,28 +19,7 @@ You learn:
 
 
 
-2. Business / Company Website
-
-Build:
-
-* Consistent layout across pages
-* Service cards
-* Contact page layout
-* Professional spacing and alignment
-
-You learn:
-
-* Design consistency
-* Reusable CSS classes
-* Layout discipline
-* Real-world spacing and alignment
-* Mobile usability
-
-
-
-
-
-3. Landing Page
+2. Landing Page
 
 Build:
 
@@ -56,6 +35,27 @@ You learn:
 * CSS Grid
 * Mobile-first thinking
 * Content prioritization
+
+
+
+
+
+3. Business / Company Website
+
+Build:
+
+* Consistent layout across pages
+* Service cards
+* Contact page layout
+* Professional spacing and alignment
+
+You learn:
+
+* Design consistency
+* Reusable CSS classes
+* Layout discipline
+* Real-world spacing and alignment
+* Mobile usability
 
 
 
