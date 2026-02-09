@@ -1,253 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- ==================== Header ==================== -->
-    <header class="header">
-      <!-- Logo -->
-      <a href="#home" class="logo">Rafi <span>Verse</span></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
 
-      <!-- Navigation Bar -->
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-      <!-- Contact me button -->
-      <button class="gradient-btn">Contact Me</button>
-    </header>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <a href="#home" class="logo">Rafi <span>Verse</span></a>
+  <i class='bx bx-menu' id="menu-icon"></i>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="gradient-btn" id="contact-btn">Contact Me</button>
+</header>
 
-    <!-- ==================== Home Section ==================== -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi, It's <span>Rafik</span></h1>
-        <h3>I am a <span>CSE student.</span></h3>
-        <p>
-          I am a Computer Science and Engineering student passionate about
-          solving problems and building impactful projects. I have experience in
-          web development and constantly explore new technologies to enhance my
-          skills.
-        </p>
+<!-- ================= HOME ================= -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h1>Hi, It's <span>Rafik</span></h1>
+    <h3>I am a <span>CSE student.</span></h3>
+    <p>I am a Computer Science and Engineering student passionate about solving problems and building impactful projects. I have experience in web development and constantly explore new technologies to enhance my skills.</p>
 
-        <!-- Social Icons -->
-        <div class="social-icons">
-          <a href="#" class="social-icon"><i class="bx bxl-github"></i></a>
-          <a href="#" class="social-icon"><i class="bx bxl-linkedin-square"></i></a>
-          <a href="#" class="social-icon"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
-        </div>
+    <div class="social-icons">
+      <a href="https://x.com/rafiverse" target="_blank" class="social-icon"><i class="bx bxl-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/rafequl-islam-bablu-b188433a1/" target="_blank" class="social-icon"><i class="bx bxl-linkedin-square"></i></a>
+      <a href="https://www.instagram.com/rafi_verse_004" target="_blank" class="social-icon"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61581672028745" target="_blank" class="social-icon"><i class="bx bxl-facebook-circle"></i></a>
+    </div>
 
-        <!-- Hire and Contact Buttons -->
-        <div class="btn-group">
-          <a href="#" class="gradient-btn">Hire</a>
-          <a href="#contact" class="gradient-btn">Contact</a>
-        </div>
+    <div class="btn-group">
+      <a href="#contact" class="gradient-btn">Hire</a>
+      <a href="#contact" class="gradient-btn">Contact</a>
+    </div>
+  </div>
+
+  <div class="home-image">
+    <img src="pp.jpeg" alt="Rafequl Islam Profile Picture" />
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="pp.jpeg" alt="Rafequl Islam's picture" />
+  </div>
+  <div class="about-content">
+    <h2>About <span>Me</span></h2>
+    <p>I am a passionate Computer Science and Engineering student who enjoys solving challenging problems with efficient algorithms. I have hands-on experience in web development and programming, and I am continuously learning new technologies to stay updated. I strive to build projects that make a real-world impact and demonstrate my skills effectively.</p>
+    <a href="#" class="gradient-btn">Read More</a>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="education" id="education">
+  <h2 class="heading">My Education</h2>
+  <div class="edu-container">
+    <div class="edu-card">
+      <div class="edu-card-info">
+        <i class='bx bxs-graduation'></i>
+        <h3>Bachelor of CSE</h3>
+        <p>Eastern University</p>
+        <p>2024 - Present</p>
+        <p>GPA: 3.8/4.0</p>
       </div>
-
-      <!-- Profile Image -->
-      <div class="home-image">
-        <img src="pp.jpeg" alt="Rafequl Islam Profile Picture" />
+    </div>
+    <div class="edu-card">
+      <div class="edu-card-info">
+        <i class="bx bxs-book"></i>
+        <h3>Higher Secondary (HSC)</h3>
+        <p>Govt.Dhaka Udyan College</p>
+        <p>2021 - 2023</p>
+        <p>GPA: 4.83/5.0</p>
       </div>
-    </section>
-
-    <!-- ==================== About Section ==================== -->
-    <section class="about" id="about">
-      <!-- About Image -->
-      <div class="about-image">
-        <img src="pp.jpeg" alt="Rafequl Islam's picture" />
+    </div>
+    <div class="edu-card">
+      <div class="edu-card-info">
+        <i class="bx bxs-school"></i>
+        <h3>Secondary School (SSC)</h3>
+        <p>Aim Plus(+) Ideal School</p>
+        <p>2019 - 2021</p>
+        <p>GPA: 4.83/5.0</p>
       </div>
+    </div>
+  </div>
+</section>
 
-      <!-- About Content -->
-      <div class="about-content">
-        <h2>About <span>Me</span></h2>
-        <p>
-          I am a passionate Computer Science and Engineering student who enjoys
-          solving challenging problems with efficient algorithms. I have
-          hands-on experience in web development and programming, and I am
-          continuously learning new technologies to stay updated. I strive to
-          build projects that make a real-world impact and demonstrate my skills
-          effectively.
-        </p>
-        <a href="#" class="gradient-btn">Read More</a>
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+  <h2 class="heading">Skills</h2>
+  <div class="skills-container">
+    <div class="skills-box">
+      <div class="skills-info">
+        <i class='bx bxl-javascript' ></i>
+        <h4>JavaScript</h4>
+        <p>Write clean ES6+ code for DOM manipulation, events, and API requests.</p>
       </div>
-    </section>
-
-    <!-- ==================== Education Section ==================== -->
-    <section id="education" class="education">
-      <h2 class="heading">My Education</h2>
-
-      <div class="edu-container">
-        <!-- Bachelor of CSE -->
-        <div class="edu-card">
-          <div class="edu-card-info">
-            <i class='bx bxs-graduation'></i>
-            <h3>Bachelor of CSE</h3>
-            <p>Eastern University</p>
-            <p>2024 - Present</p>
-            <p>GPA: 3.8/4.0</p>
-          </div>
-        </div>
-
-        <!-- Higher Secondary (HSC) -->
-        <div class="edu-card">
-          <div class="edu-card-info">
-            <i class="bx bxs-book"></i>
-            <h3>Higher Secondary (HSC)</h3>
-            <p>Govt.Dhaka Udyan College</p>
-            <p>2021 - 2023</p>
-            <p>GPA: 4.83/5.0</p>
-          </div>
-        </div>
-
-        <!-- Secondary School (SSC) -->
-        <div class="edu-card">
-          <div class="edu-card-info">
-            <i class="bx bxs-school"></i>
-            <h3>Secondary School (SSC)</h3>
-            <p>Aim Plus(+) Ideal School</p>
-            <p>2019 - 2021</p>
-            <p>GPA: 4.83/5.0</p>
-          </div>
-        </div>
+    </div>
+    <div class="skills-box">
+      <div class="skills-info">
+        <i class='bx bxl-css3' ></i>
+        <h4>CSS</h4>
+        <p>Create responsive layouts using Flexbox, Grid, and modern CSS techniques.</p>
       </div>
-    </section>
-
-    <!-- ==================== Skills Section ==================== -->
-    <section class="skills" id="skills">
-      <h2 class="heading">Skills</h2>
-
-      <div class="skills-container">
-        <!-- JavaScript Skill -->
-        <div class="skills-box">
-          <div class="skills-info">
-            <i class='bx bxl-javascript' ></i>
-            <h4>JavaScript</h4>
-            <p>Write clean ES6+ code for DOM manipulation, events, and API requests.</p>
-          </div>
-        </div>
-
-        <!-- CSS Skill -->
-        <div class="skills-box">
-          <div class="skills-info">
-            <i class='bx bxl-css3' ></i>
-            <h4>CSS</h4>
-            <p>Create responsive layouts using Flexbox, Grid, and modern CSS techniques.</p>
-          </div>
-        </div>
-
-        <!-- HTML Skill -->
-        <div class="skills-box">
-          <div class="skills-info">
-            <i class='bx bxl-html5' ></i>
-            <h4>HTML</h4>
-            <p>Build semantic, accessible markup following web standards.</p>
-          </div>
-        </div>
+    </div>
+    <div class="skills-box">
+      <div class="skills-info">
+        <i class='bx bxl-html5' ></i>
+        <h4>HTML</h4>
+        <p>Build semantic, accessible markup following web standards.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ==================== Projects Section ==================== -->
-    <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
-
-      <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="projects-box">
-          <div class="projects-card">
-            <img src="project1.png" alt="project 1" class="img">
-            <h2>Project-1</h2>
-            <p>A profile card.</p>
-            <button class="gradient-btn">Review</button>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="projects-box">
-          <div class="projects-card">
-            <img src="project2.png" alt="project 2" class="img">
-            <h2>Project-2</h2>
-            <p>A transparent login page.</p>
-            <button class="gradient-btn">Review</button>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="projects-box">
-          <div class="projects-card">
-            <img src="project3.png" alt="project 3" class="img">
-            <h2>Project-3</h2>
-            <p>A formal login page.</p>
-            <button class="gradient-btn">Review</button>
-          </div>
-        </div>
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+  <h2 class="heading">Projects</h2>
+  <div class="projects-container">
+    <div class="projects-box">
+      <div class="projects-card">
+        <img src="project1.png" alt="project 1" class="img">
+        <h2>Project-1</h2>
+        <p>A profile card.</p>
+        <button class="gradient-btn">Review</button>
       </div>
-    </section>
-
-    <!-- ==================== Contact Section ==================== -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact me</h2>
-      <form action="#">
-        <div class="input-group1">
-          <!-- Full Name and Email -->
-          <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-          </div>
-
-          <!-- Phone Number and Subject -->
-          <div class="input-box">
-            <input type="tel" placeholder="Phone Numer">
-            <input type="text" placeholder="Subject">
-          </div>
-        </div>
-
-        <!-- Message and Submit button -->
-        <div class="input-group2">
-          <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-          <input type="submit" value="Send Message" class="gradient-btn">
-        </div>
-      </form>
-    </section>
-
-    <!-- ==================== Footer ==================== -->
-    <footer class="footer">
-      <!-- Social Icons -->
-      <div class="social-icon">
-        <a href="#"><i class="bx bxl-github"></i></a>
-        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="#"><i class="bx bxl-twitter"></i></a>
+    </div>
+    <div class="projects-box">
+      <div class="projects-card">
+        <img src="project2.png" alt="project 2" class="img">
+        <h2>Project-2</h2>
+        <p>A transparent login page.</p>
+        <button class="gradient-btn">Review</button>
       </div>
+    </div>
+    <div class="projects-box">
+      <div class="projects-card">
+        <img src="project3.png" alt="project 3" class="img">
+        <h2>Project-3</h2>
+        <p>A formal login page.</p>
+        <button class="gradient-btn">Review</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Footer Links -->
-      <ul class="list">
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact Me</h2>
+  <form id="contact-form">
+    <div class="input-group1">
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="text" name="subject" placeholder="Subject" required>
+      </div>
+    </div>
+    <div class="input-group2">
+      <textarea name="message" placeholder="Your Message" rows="10" required></textarea>
+      <input type="submit" value="Send Message" class="gradient-btn">
+    </div>
+  </form>
+</section>
 
-      <!-- Copyright -->
-      <p class="copyright"><i class='bx bx-copyright'></i>Rafequl Islam | All rights Reserved</p>
-    </footer>
-  </body>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="social-icon">
+    <a href="https://x.com/rafiverse" target="_blank"><i class="bx bxl-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/rafequl-islam-bablu-b188433a1/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+    <a href="https://www.instagram.com/rafi_verse_004" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61581672028745" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+  </div>
+  <ul class="list">
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="copyright"><i class='bx bx-copyright'></i>Rafequl Islam | All rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js" defer></script>
+</body>
 </html>
