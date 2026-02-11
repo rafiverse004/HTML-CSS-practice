@@ -4,41 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nurflix BD - Subscription Services</title>
+
+  <!-- ================== STYLES ================== -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Skip Navigation -->
+
+  <!-- ================== SKIP NAVIGATION ================== -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Header -->
+  <!-- ================== HEADER ================== -->
   <header class="header">
     <a href="#home" class="logo">Nurflix <span>BD</span></a>
     <nav class="navbar">
       <a href="#home" class="nav-link">Home</a>
       <a href="#services" class="nav-link">Services</a>
       <a href="#plans" class="nav-link">Plans</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#support" class="nav-link">Support</a>
     </nav>
     <div class="header-actions">
       <button class="dark-toggle" id="darkToggle"><i class="fas fa-moon"></i></button>
       <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
-      <a href="#contact" class="gradient-btn contact-btn">Contact</a>
     </div>
   </header>
 
-  <!-- Scroll Progress -->
+  <!-- ================== SCROLL PROGRESS ================== -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- Main Content -->
+  <!-- ================== MAIN CONTENT ================== -->
   <main id="main-content">
-    <!-- Home Section -->
+
+    <!-- =============== HOME SECTION =============== -->
     <section class="home" id="home">
       <div class="home-content">
         <h1>Welcome to <span class="highlight">Nurflix BD</span></h1>
-        <h3>Your one-stop subscription house 🖤</h3>
-        <p>Choose from Netflix, Amazon Prime, Disney+, Hoichoi, YouTube Premium, VPNs, and more.</p>
+        <h3>Your gateway to Netflix, Prime, Disney+, YouTube Premium, VPNs, and more.</h3>
+        <p>Pick your plan and start streaming instantly—anytime, anywhere.</p>
         <a href="#plans" class="gradient-btn cta-btn">View Plans</a>
       </div>
       <div class="home-image">
@@ -46,7 +49,7 @@
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- =============== SERVICES SECTION =============== -->
     <section class="services" id="services">
       <h2 class="section-heading">Our <span>Services</span></h2>
       <div class="services-grid">
@@ -70,58 +73,169 @@
       </div>
     </section>
 
-    <!-- Plans Section -->
-    <section class="plans" id="plans">
-      <h2 class="section-heading">Subscription <span>Plans</span></h2>
-      <div class="plans-grid">
-        <!-- Netflix -->
-        <div class="plan-card featured">
-          <div class="plan-header"><h3><i class="fab fa-netflix"></i> Netflix</h3><span class="popular-badge">Most Popular</span></div>
-          <div class="plan-options">
-            <div class="option-group"><h4>Personal Account</h4><ul><li>1 Month <span class="price">299 Tk</span></li><li>3 Months <span class="price">819 Tk</span></li><li>6 Months <span class="price">1449 Tk</span></li><li>12 Months <span class="price">2449 Tk</span></li></ul></div>
-            <div class="option-group"><h4>Shared Account</h4><ul><li>1 Month <span class="price">199 Tk</span></li><li>3 Months <span class="price">419 Tk</span></li><li>6 Months <span class="price">819 Tk</span></li></ul></div>
-          </div>
-          <a href="#contact" class="gradient-btn plan-btn">Subscribe Now</a>
+<!-- =============== PLANS SECTION =============== -->
+<section class="plans" id="plans">
+  <h2 class="section-heading">Subscription <span>Plans</span></h2>
+  <div class="plans-grid">
+
+    <!-- Netflix -->
+    <div class="plan-card featured">
+      <div class="plan-header">
+        <h3><i class="fab fa-netflix"></i> Netflix</h3>
+        <span class="popular-badge">Most Popular</span>
+      </div>
+      <div class="plan-options">
+        <div class="option-group"><h4>Personal Account</h4>
+          <ul>
+            <li>1 Month <span class="price">299 Tk</span></li>
+            <li>3 Months <span class="price">819 Tk</span></li>
+            <li>6 Months <span class="price">1449 Tk</span></li>
+            <li>12 Months <span class="price">2449 Tk</span></li>
+          </ul>
         </div>
-        <!-- Other plans omitted for brevity but structured similarly -->
+        <div class="option-group"><h4>Shared Account</h4>
+          <ul>
+            <li>1 Month <span class="price">199 Tk</span></li>
+            <li>3 Months <span class="price">419 Tk</span></li>
+            <li>6 Months <span class="price">819 Tk</span></li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://wa.me/8801885806488" target="_blank" class="gradient-btn plan-btn">Subscribe Now</a>
+    </div>
+
+    <!-- Amazon Prime -->
+    <div class="plan-card">
+      <div class="plan-header"><h3><i class="fab fa-amazon"></i> Amazon Prime</h3></div>
+      <div class="plan-options">
+        <div class="option-group"><h4>Personal Account</h4>
+          <ul>
+            <li>1 Month <span class="price">299 Tk</span></li>
+            <li>3 Months <span class="price">819 Tk</span></li>
+            <li>6 Months <span class="price">1449 Tk</span></li>
+          </ul>
+        </div>
+        <div class="option-group"><h4>Shared Account</h4>
+          <ul>
+            <li>1 Month <span class="price">199 Tk</span></li>
+            <li>3 Months <span class="price">419 Tk</span></li>
+            <li>6 Months <span class="price">819 Tk</span></li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://wa.me/8801885806488" target="_blank" class="gradient-btn plan-btn">Subscribe Now</a>
+    </div>
+
+    <!-- YouTube Premium -->
+    <div class="plan-card">
+      <div class="plan-header"><h3><i class="fab fa-youtube"></i> YouTube Premium</h3></div>
+      <div class="plan-options">
+        <div class="option-group">
+          <ul>
+            <li>1 Month <span class="price">120 Tk</span></li>
+            <li>3 Months <span class="price">269 Tk</span></li>
+            <li>6 Months <span class="price">489 Tk</span></li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://wa.me/8801885806488" target="_blank" class="gradient-btn plan-btn">Subscribe Now</a>
+    </div>
+
+  </div>
+</section>
+
+    <!-- =============== SUPPORT SECTION =============== -->
+    <section class="support" id="support">
+      <div class="container">
+        <h2 class="section-heading">Customer <span>Support</span></h2>
+        <form class="support-form" id="supportForm">
+          <div class="support-row">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="support-row">
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <select name="issue" required>
+              <option value="">Select Issue Type</option>
+              <option value="login">Login / Access Problem</option>
+              <option value="payment">Payment Issue</option>
+              <option value="expired">Subscription Expired</option>
+              <option value="other">Other Problem</option>
+            </select>
+          </div>
+          <textarea name="message" placeholder="Describe your problem clearly" required></textarea>
+          <button type="submit" class="gradient-btn support-btn">Submit Support Request</button>
+        </form>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="section-heading">Get In <span>Touch</span></h2>
-      <div class="contact-container">
-        <form class="contact-form" id="contactForm">
-          <div class="form-group"><input type="text" placeholder="Your Name" required></div>
-          <div class="form-group"><input type="email" placeholder="Your Email" required></div>
-          <div class="form-group"><input type="text" placeholder="Service Interested In" required></div>
-          <div class="form-group"><textarea placeholder="Your Message" rows="4" required></textarea></div>
-          <button type="submit" class="gradient-btn submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
-        </form>
+    <!-- =============== CONTACT INFO SECTION =============== -->
+    <section class="contact-info-section">
+      <div class="container">
+        <h2 class="section-heading">Contact <span>Us</span></h2>
         <div class="contact-info">
-          <div class="info-card"><i class="fas fa-phone"></i><h4>Call Us</h4><p>+880 1XXX-XXXXXX</p></div>
-          <div class="info-card"><i class="fas fa-envelope"></i><h4>Email Us</h4><p>support@nurflixbd.com</p></div>
-          <div class="info-card"><i class="fab fa-whatsapp"></i><h4>WhatsApp</h4><p>Chat with us instantly</p></div>
+          <a href="tel:+8801572053033" class="info-card">
+            <i class="fas fa-phone"></i>
+            <h4>Call Us</h4>
+            <p>+880 1572-053033</p>
+          </a>
+
+          <a href="#" class="info-card" id="emailCard">
+            <i class="fas fa-envelope"></i>
+            <h4>Email Us</h4>
+            <p>snurflixbd@gmail.com</p>
+          </a>
+
+          <a href="https://wa.me/8801885806488" target="_blank" class="info-card">
+            <i class="fab fa-whatsapp"></i>
+            <h4>WhatsApp</h4>
+            <p>+880 1885-806488</p>
+          </a>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- ================== FOOTER ================== -->
   <footer class="footer">
     <div class="footer-content">
-      <div class="footer-logo"><h3>Nurflix <span>BD</span></h3><p>Your trusted subscription partner</p></div>
-      <div class="footer-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#plans">Plans</a><a href="#contact">Contact</a></div>
-      <div class="social-links"><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+      <div class="footer-logo">
+        <h3>Nurflix <span>BD</span></h3>
+        <p>Your gateway to streaming services.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#support">Support</a>
+      </div>
+      <div class="social-links">
+        <a href="https://wa.me/8801885806488" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61587182403708"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2025 Nurflix BD. All rights reserved.</p></div>
+    <div class="footer-bottom">
+      &copy; 2026 Nurflix BD. All rights reserved.
+    </div>
   </footer>
 
-  <!-- Floating Buttons -->
-  <a href="https://wa.me/880XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-  <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+  <!-- ================== FLOATING BUTTONS ================== -->
+  <a href="https://wa.me/8801885806488" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-  <!-- Scripts -->
+  <!-- ================== SCRIPTS ================== -->
   <script src="script.js"></script>
+  <script>
+    // Email card JS
+    const emailCard = document.getElementById('emailCard');
+    emailCard.addEventListener('click', e => {
+      e.preventDefault();
+      window.location.href = 'mailto:snurflixbd@gmail.com';
+    });
+  </script>
 </body>
 </html>
